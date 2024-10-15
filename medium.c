@@ -53,8 +53,8 @@ int checkPassword(char *pass) {
         sum += (pass[i] - '0');
     }
 
-    // Sum of all digits must be 69
-    if(sum == 69) {
+    // Sum of all digits must be 60
+    if(sum == 60) {
         return 1;
     }
 

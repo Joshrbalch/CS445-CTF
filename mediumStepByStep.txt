@@ -1,0 +1,9 @@
+Username Checks:
+    Cannot be 4 or less characters
+    Must not contain any digits
+    Must contain the '@' symbol
+
+Password Checks: 
+    Can only contain digits
+    Must have exactly 10 digits
+    The digits must add up to 60
