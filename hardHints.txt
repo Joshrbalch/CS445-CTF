@@ -1,0 +1,9 @@
+HINTS:
+	1) Try and figure out what language this was compiled with. 
+	Maybe looking at the text of the binary could help you out here.
+
+
+	2) Ghidra is a great tool for reverse engineering because it allows you to install extensions.
+	Try finding an extension that will analyze binaries that were written in the language you found.
+	It's still a little messy looking, but a lot better to look at. Check some of the decompiled
+	functions, there's a lot of junk, but trying looking at functions that start with "m"
