@@ -1,0 +1,10 @@
+There are many ways to solve this problem, and they all begin with realizing that the
+password is a red hering. There is no password. However the developers did not take security into 
+mind and have left some very big flaws in the security of this password manager. The most simple way to solve this
+would be to open the exe in IDAfreeware, and view the strings of the program. Here one will see two interesting clues,
+one is "Salad3". This may seem like a flag, but if one would look at this hints, it says the flag is encrypted.
+"Salad3" is a hint to the encryption method used on the flag. I wonder how salad has to do with cryptology?
+"Salad3" hints towards a caeser cypher and 3 is the offset. With this in mind, one can use a caeser cypher on
+an encrypted string to find the admin password. 
+
+Answer: "445CTFEASY"
