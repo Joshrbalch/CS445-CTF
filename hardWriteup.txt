@@ -1,0 +1,17 @@
+Name: Go Bama Go
+Difficulty: Hard
+Points: 1000
+
+  Task:
+      There is a flag hidden in the compiled file that you must extract
+  Info: 
+      The Hard binary was compiled in golang 
+  Description:
+    The program itself is incredibly simple, it contains 2 functions, one of which prints out an array of characters that make up a flag
+    The challenge, is figuring out that this file is a GOlang executeable, and taking the necessary action to use resources availbe to solve the challenge
+    Find the function, read the stored variable a data, and get the falg
+
+  Knowledge Needed:
+    Knowledge of how to disassemble
+    Knowledge of how to figure out what language a program was compiled with
+    Knowledge of how to use scripts inside a disassembler like Ghidra
