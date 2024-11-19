@@ -11,8 +11,6 @@ int main() {
 
     printf("Enter your username: ");
     scanf("%s", username);
-
-
     
     printf("Enter your password: ");
     scanf("%s", pass);
@@ -72,15 +70,22 @@ int checkUsername(char *username) {
     }
 
     int atFlag = 0;
+    int letterFlag = 0;
 
-    // Username must contain an '@' character
+    // Username must contain an '@' character and a letter
     for(int i = 0; i < length; i++) {
         if (username[i] == '@') {
             atFlag = 1;
         }
+        if(isalpha(username[i])) {
+            letterFlag = 1;
+        }
+        if(atFlag && letterFlag) {
+            break;
+        }
     }
 
-    if (!atFlag) {
+    if (!atFlag || !letterFlag) {
         return 0;
     }
 
