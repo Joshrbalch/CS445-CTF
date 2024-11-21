@@ -1,7 +1,7 @@
 Username Checks:
     Cannot be 4 or less characters
-    Must not contain any digits
-    Must contain the '@' symbol
+    All characters must either be lowercase letters or the '@' or '.' symbols
+    Must contain the '@' symbol, but cannot be all '@' symbols
 
 Password Checks: 
     Can only contain digits

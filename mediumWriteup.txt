@@ -1,19 +1,19 @@
 Name: Account Mania
 Difficulty: Medium
-Points: 400
+Points: 350
 
 Task:
     You must have the correct username and password to capture the flag. 
 
 Info:
-    The medium.exe file was compiled using gcc with no compiler optimization.
+    The medium.exe file was compiled using gcc with compiler optimization disabled.
 
 Description:
-    The primary task is to deduce the validation logic for the login. 
+    The primary task is to deduce the validation logic for the login.
     This challenge simulates a typical authentification system that has different acceptance logic for the username and password.
     You must figure out the logic for both the username and password to capture the flag.
-    Find the two validation functions using a dissasembler, then look for the conditionals.
+    There is not just one answer, instead focus on figuring out the acceptance logic.
 
 Knowledge Needed:
-    Proficiency in a dissasembler (IDA Pro or Ghidra)
-    How control flow operations work
+    Proficiency in a dissasembler (IDA Pro or Ghidra).
+    How control flow operations work.

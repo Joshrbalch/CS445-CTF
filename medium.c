@@ -72,27 +72,10 @@ int checkUsername(char *username) {
     int atFlag = 0;
     int letterFlag = 0;
 
-    // Username must contain an '@' character and a letter
-    for(int i = 0; i < length; i++) {
-        if (username[i] == '@') {
-            atFlag = 1;
-        }
-        if(isalpha(username[i])) {
-            letterFlag = 1;
-        }
-        if(atFlag && letterFlag) {
-            break;
-        }
-    }
-
-    if (!atFlag || !letterFlag) {
-        return 0;
-    }
-
     // All characters must be lowercase letters
     for (int i = 0; i < length; i++) {
         if (!islower(username[i])) {
-            if(username[i] == '@') {
+            if(username[i] == '@' || username[i] == '.') {
                 continue;
             }
             else {
@@ -101,5 +84,19 @@ int checkUsername(char *username) {
         }
     }
 
-    return 1;
+        // Username must contain an '@' character and a letter
+    for(int i = 0; i < length; i++) {
+        printf("Checking character %c\n", username[i]);
+        if (username[i] == '@') {
+            atFlag = 1;
+        }
+        if(isalpha(username[i])) {
+            letterFlag = 1;
+        }
+        if(atFlag && letterFlag) {
+            return 1;
+        }
+    }
+
+    return 0;
 }
